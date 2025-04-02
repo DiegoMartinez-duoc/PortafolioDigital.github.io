@@ -1,0 +1,203 @@
+* {
+    user-select: none;  
+}
+
+body {
+    background-color: black;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+}
+
+
+
+
+#primera-linea {
+    margin-left: 15px;
+}
+
+#caja-texto-lateral {
+    position: absolute;
+    top: 0px;  
+    left: 1200px; 
+    width: 350px;
+    height: 750px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    z-index: 10;  
+    overflow-y: auto; 
+    max-height: 750px;
+}
+
+#nombre {
+    margin-left: 50px;
+}
+
+#perfil {
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+.informacion {
+    margin-left: 10px;
+    
+}
+
+.caja {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 15px;
+    margin-top: -20px;
+}
+
+.habilidades {
+    color: white;
+}
+
+h5 {
+    color: rgb(2, 2, 76);
+}
+
+
+
+#estudios {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 750px;
+    top: 300px;
+    transform: translate(-35%, -50%);
+}
+
+#estudios > .imagen {
+    width: 70vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+}
+
+
+
+
+#seccion-info {
+    position: absolute;
+    top: 505px;
+    left: 10px;
+}
+
+#link {
+    color: white;
+    position: absolute;
+    top: 550px;
+    left: 15px;
+    cursor: pointer; 
+}
+
+#link:hover {
+    color: blue; 
+}
+
+
+
+
+#expandir {
+    padding: 0.5rem 1rem;
+    background-color: darkblue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center; /* Centra el botón verticalmente */
+    position: absolute;
+    top: 532px;
+    left: 770px;
+}
+
+#expandir:hover {
+    background-color: rgb(2, 2, 151);
+}
+
+
+
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.lightbox img:hover {
+    transform: scale(1.02);
+}
+
+
+
+@media (max-width: 1024px) {
+    #juego-container {
+        width: 90vw;
+    }
+    #nombre-juego {
+        font-size: 3vw;
+    }
+    #otros-juegos {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .titulo, .centro-nav, .right-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    #juegos {
+        width: 100px;
+        display: flex;
+        gap: 4vmin;
+        position: relative;
+        left: 750px;
+        top: 300px; 
+        transform: translate(-50%, -50%);
+    }
+    #nombre-juego {
+        font-size: 3vw;
+        width: 80vw;
+        height: auto;
+    }
+    .contenedor-hilos {
+        flex-direction: column;
+        width: 90%;
+    }
+    .caja-hilo {
+        width: 90%;
+        height: auto;
+    }
+}

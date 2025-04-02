@@ -1,7 +1,7 @@
 const track = document.getElementById("estudios");
 
             
-let info = "Certificacion profesional en ciencias de la computacion";
+let info = "Certificación profesional en ciencias de la computación";
 let seleccion = "window.location.href='https://www.codecademy.com/about';";
 
 document.getElementById("perfil").addEventListener("click", () => {
@@ -74,11 +74,11 @@ window.onmousemove = e => {
     console.log("nextPercentage:", track.dataset.percentage); // Debug
 
     if (track.dataset.percentage >= -65 && track.dataset.percentage < -45) {
-        info = "Certificacion profesional de ingenieria full-stack";
+        info = "Certificación profesional de ingeniería full-stack";
         seleccion = "window.location.href='https://www.codecademy.com/about'";
         document.getElementById("link").textContent = "Codecademy";
     } else if (track.dataset.percentage >= -45 && track.dataset.percentage < -25) {
-        info = "Certificacion profesional en ciencias de la computacion";
+        info = "Certificación profesional en ciencias de la computación";
         seleccion = "window.location.href='https://www.codecademy.com/about'";
         document.getElementById("link").textContent = "Codecademy";
     } else if (track.dataset.percentage >= -25) {
@@ -86,11 +86,11 @@ window.onmousemove = e => {
         seleccion = "window.location.href='https://www.duoc.cl/nosotros/sobre-duoc/'";
         document.getElementById("link").textContent = "DuocUC";
     } else if (track.dataset.percentage >= -85 && track.dataset.percentage < -65) {
-        info = "Certificacion profesional en ciencia de datos";
+        info = "Certificación profesional en ciencia de datos";
         seleccion = "window.location.href='https://www.codecademy.com/about'";
         document.getElementById("link").textContent = "Codecademy";
     } else if (track.dataset.percentage < -85) {
-        info = "Licenciatura en astronomia (inconclusa)";
+        info = "Licenciatura en astronomía (inconclusa)";
         seleccion = "window.location.href='https://www.uc.cl/universidad/'";
         document.getElementById("link").textContent = "Pontificia Universad Catolica de Chile";
     }

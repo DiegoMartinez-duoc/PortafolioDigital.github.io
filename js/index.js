@@ -83,7 +83,7 @@ window.onmousemove = e => {
         document.getElementById("link").textContent = "Codecademy";
     } else if (track.dataset.percentage >= -25) {
         info = "Analista programador computacional";
-        seleccion = "window.location.href='https://www.duoc.cl/nosotros/sobre-duoc/'";
+        seleccion = "window.location.href='https://www.duoc.cl/carreras/analista-programador-computacional/'";
         document.getElementById("link").textContent = "DuocUC";
     } else if (track.dataset.percentage >= -85 && track.dataset.percentage < -65) {
         info = "Certificación profesional en ciencia de datos";
@@ -91,7 +91,7 @@ window.onmousemove = e => {
         document.getElementById("link").textContent = "Codecademy";
     } else if (track.dataset.percentage < -85) {
         info = "Licenciatura en astronomía (inconclusa)";
-        seleccion = "window.location.href='https://www.uc.cl/universidad/'";
+        seleccion = "window.location.href='https://admision.uc.cl/carreras/astronomia/'";
         document.getElementById("link").textContent = "Pontificia Universad Catolica de Chile";
     }
 
